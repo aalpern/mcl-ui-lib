@@ -1,0 +1,1 @@
+(defun shake-window (w &key                        (offset #@(2 0))                       (num 2))  (let ((old-position (view-position w)))    (dotimes (n num)      (set-view-position w (add-points Old-Position offset))      (set-view-position w Old-Position)      (set-view-position w (subtract-points Old-Position offset))      (set-view-position w Old-Position)      )))
