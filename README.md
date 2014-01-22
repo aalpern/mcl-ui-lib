@@ -15,7 +15,7 @@ The original README is what follows.
 ```
 README for UI-Lib version 1.0
 June, 1997
-Adam Alpern <alpern@brightware.com>
+Adam Alpern
 
 This is UI-Lib 1.0.
 
