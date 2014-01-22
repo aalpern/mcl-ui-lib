@@ -1,0 +1,3 @@
+*.lisp text
+*.system text
+*.png binary
