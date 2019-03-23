@@ -6,9 +6,10 @@ primarily in college. It works fine in MCL 3.0/68k running on System
 7.5 in the Basilisk II Mac emulator.
 
 It implements a set of 3D-shaded UI widgets based on an article in
-Apple's old developer magazine *develop*, issue 15. Unfortunately, I
-can no longer find a copy of that article in my archives or on the
-web.
+Apple's old developer magazine [*develop*, issue
+15](https://vintageapple.org/develop/pdf/develop-15_9309_September_1993.pdf)
+(see "Working in the Third Dimension", by Jamie Osborne and Deanna
+Thomas, on p. 103).
 
 The original README is what follows.
 
