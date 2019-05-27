@@ -1,1 +1,25 @@
-(defparameter *custom-window-resource-file* "ccl;projects:Custom Windows:Resources")(defsystem custom-windows  :depends-on (ui-lib-1.0)  :source-pathname  "projects;Custom Windows:source:"  :binary-pathname  "projects;Custom Windows:binaries:mcl3-PPC:"  :binary-extension "pfsl"  :finally-do (progn                (with-open-resource-file (f *custom-window-resource-file*)                  (defparameter *close-box-icon* (load-color-icon 128))                  (defparameter *close-box-icon-hilited* (load-color-icon 129))                  (defparameter *resize-box-icon* (load-color-icon 134))                  (defparameter *zoom-box-icon* (load-color-icon 132))                  (defparameter *zoom-box-icon-hilited* (load-color-icon 133))                  )                (provide :custom-windows))  :components  (   (:file "custom-windows")   (:file "clean-custom-window")   (:file "motif-custom-window")   )  )
+
+(defparameter *custom-window-resource-file* "ccl;projects:Custom Windows:Resources")
+
+(defsystem custom-windows
+  :depends-on (ui-lib-1.0)
+  :source-pathname  "projects;Custom Windows:source:"
+  :binary-pathname  "projects;Custom Windows:binaries:mcl3-PPC:"
+  :binary-extension "pfsl"
+
+  :finally-do (progn
+                (with-open-resource-file (f *custom-window-resource-file*)
+                  (defparameter *close-box-icon* (load-color-icon 128))
+                  (defparameter *close-box-icon-hilited* (load-color-icon 129))
+                  (defparameter *resize-box-icon* (load-color-icon 134))
+                  (defparameter *zoom-box-icon* (load-color-icon 132))
+                  (defparameter *zoom-box-icon-hilited* (load-color-icon 133))
+                  )
+                (provide :custom-windows))
+  :components
+  (
+   (:file "custom-windows")
+   (:file "clean-custom-window")
+   (:file "motif-custom-window")
+   )
+  )

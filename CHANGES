@@ -1,1 +1,27 @@
-¥ UI-LIB packageEverything is in the UI-LIB package now, rather than spread between cl-user and ccl. Applications should (use-package :ui-lib)¥ cicn-dialog-item-mixincicn-dialog-item-mixin	has been renamed cicn-mixinAll of the slots which were prefixed icon- are now prefixed cicn- (i.e icon-size is now cicn-size, etc ... )¥ 3d-button-dialog-iteminitargs changes:	square-p 	=> 	square	inset?		=>	inset	frame?		=>	frameThings that are still here, but deprecated------------------------------------------¥ The keyword :botright is deprecated. Use :BOTTOMRIGHT instead.¥ frame-rect-3D-with-colors is deprecated.use (with-3d-colors (hilit shadow)      (frame-rect-3d ... )) instead.¥ frame-rect-3D-with-standard-colors is deprecated.use (with-standard-colors      (frame-rect-3d ... )) instead.
+
+¥ UI-LIB package
+Everything is in the UI-LIB package now, rather than spread 
+between cl-user and ccl. Applications should (use-package :ui-lib)
+
+¥ cicn-dialog-item-mixin
+cicn-dialog-item-mixin	has been renamed cicn-mixin
+All of the slots which were prefixed icon- are now prefixed cicn- 
+(i.e icon-size is now cicn-size, etc ... )
+
+¥ 3d-button-dialog-item
+initargs changes:
+	square-p 	=> 	square
+	inset?		=>	inset
+	frame?		=>	frame
+
+
+Things that are still here, but deprecated
+------------------------------------------
+¥ The keyword :botright is deprecated. Use :BOTTOMRIGHT instead.
+¥ frame-rect-3D-with-colors is deprecated.
+use (with-3d-colors (hilit shadow)
+      (frame-rect-3d ... )) instead.
+
+¥ frame-rect-3D-with-standard-colors is deprecated.
+use (with-standard-colors
+      (frame-rect-3d ... )) instead.
